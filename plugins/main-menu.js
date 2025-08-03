@@ -16,10 +16,8 @@ before: `「 %wm 」
 Привет 👋🏻 *%name*
 
 *• Fecha:* %fecha
-*• Hora:* %hora (🇦🇷) 
 *• Usuario:* %totalreg
 *• Tiempo activos:* %muptime
-*• Tu limite:* %limit
 %botOfc
 
 *• Usuario registrados:* %toUserReg de %toUsers
