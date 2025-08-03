@@ -7,24 +7,7 @@ const cooldowns = new Map()
 const COOLDOWN_DURATION = 180000
 
 const tags = {
-main: 'ℹ️ INFOBOT',
 jadibot: '✨ SER SUB BOT',
-downloader: '🚀 DESCARGAS',
-game: '👾 JUEGOS',
-gacha: '✨️ NEW - RPG GACHA',
-rg: '🟢 REGISTRO',
-group: '⚙️ GRUPO',
-nable: '🕹 ENABLE/DISABLE',
-nsfw: '🥵 COMANDO +18',
-buscadores: '🔍 BUSCADORES',
-sticker: '🧧 STICKER',
-econ: '🛠 RPG',
-convertidor: '🎈 CONVERTIDORES',
-logo: '🎀 LOGOS',
-tools: '🔧 HERRAMIENTA',
-randow: '🪄 RANDOW',
-efec: '🎙 EFECTO NOTA DE VOZ',
-owner: '👑 OWNER'
 }
 
 const defaultMenu = {
