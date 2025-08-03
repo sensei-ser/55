@@ -30,7 +30,7 @@ owner: '👑 OWNER'
 const defaultMenu = {
 before: `「 %wm 」
 
-Hola 👋🏻 *%name*
+Привет 👋🏻 *%name*
 
 *• Fecha:* %fecha
 *• Hora:* %hora (🇦🇷) 
