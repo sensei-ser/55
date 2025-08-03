@@ -22,7 +22,7 @@ const triggerWords = /\b(bot|simi|alexa|Хулиган)\b/i;
 if (!mention && !triggerWords.test(m.originalText)) return true;
 //if (!mention) return true;
 
-const no_cmd = /(PIEDRA|PAPEL|TIJERA|menu|estado|bots?|serbot|jadibot|Video|Audio|Exp|diamante|lolicoins?)/i;
+const no_cmd = /(PIEDRA|PAPEL|TIJERA|menu|estado|bots?|serbot|jadiаbot|Video|Audio|Exp|diamante|lolicoins?)/i;
 if (no_cmd.test(m.text)) return true;
 
 await conn.sendPresenceUpdate("composing", m.chat);

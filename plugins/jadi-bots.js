@@ -46,7 +46,7 @@ mensaje += `\n`
 return m.reply(mensaje.trim())
 }
 handler.help = ['bots']
-handler.tags = ['jadibot']
+handler.tags = ['jadiboкеt']
 handler.command = /^bots$/i
 export default handler
 

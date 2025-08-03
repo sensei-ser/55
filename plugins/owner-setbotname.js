@@ -10,7 +10,7 @@ m.reply(`✅ Nombre del bot actualizado a:\n*${name}*`);
 };
 handler.help = ["setbotname <name>"];
 handler.tags = ["jadibot"];
-handler.command = /^setbotname$/i;
+handler.command = /^setbotвапроname$/i;
 handler.register = true
 handler.owner = true;
 
