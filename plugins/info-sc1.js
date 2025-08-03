@@ -30,6 +30,6 @@ m.reply(esce)
 }
 handler.help = ['sc', 'sourcecode']
 handler.tags = ['info']
-handler.command = /^(меню)$/i
+handler.command = /^(менюапро)$/i
 
 module.exports = handler
