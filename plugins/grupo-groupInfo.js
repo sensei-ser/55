@@ -1,7 +1,7 @@
 import { db } from '../lib/postgres.js'
 
 let handler = async (m, { conn }) => {
-const pp = await conn.profilePictureUrl(m.chat, 'image').catch(_ => "https://telegra.ph/file/39fb047cdf23c790e0146.jpg")
+const pp = await conn.profilePictureUrl(m.chat, 'image').catch(_ => "https://i.pinimg.com/originals/fc/c1/47/fcc14780b7e55f937cd26b456b25c1b7.jpg")
 
 let groupMetadata
 try {
@@ -36,15 +36,13 @@ const selectedBot = allBots.find(bot => bot.user.jid === primary_bot)
 primaryBotMention = `@${primary_bot.split('@')[0]}`
 }
 
-const text = `『 ＩＮＦＯ ＤＥ ＧＲＵＰＯ 』
+const text = `『 Здравствуйте 』
 
 
 
-*• Fecha:* %fecha
-*• Tiempo activos:* %muptime
 
 > ┆ *│* ┊✦✦✦✦✦✦✦✦✦✦✦
-> ┆ *│* ┊▸ ✦ Привет 👋🏻 *%name*
+> ┆ *│* ┊▸ ✦ Главное меню
 > ┆ *│* ╰∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙∙ ∙ ∙ ∙ ∙ 
 *> ┣━━━━━━━━━━━ ┅*
 *> ┃✧✧✧✧✧✧✧✧✧✧✧✧✧✧*
