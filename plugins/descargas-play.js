@@ -33,7 +33,7 @@ contextInfo:{
 forwardedNewsletterMessageInfo: { 
 newsletterJid: '120363305025805187@newsletter', 
 serverMessageId: '', 
-newsletterName: 'Ванилька ✨️' },
+newsletterName: 'Хулиган ✨️' },
 forwardingScore: 9999999,  
 isForwarded: true,   
 mentionedJid: null,  
@@ -41,7 +41,7 @@ externalAdReply: {
 showAdAttribution: false,  
 renderLargerThumbnail: false,  
 title: yt_play[0].title,   
-body: "Ванилька",
+body: "Хулиган",
 containsAutoReply: true,  
 mediaType: 1,   
 thumbnailUrl: yt_play[0].thumbnail, 
