@@ -16,11 +16,8 @@ before: `「 %wm 」
 Привет 👋🏻 *%name*
 
 *• Fecha:* %fecha
-*• Usuario:* %totalreg
 *• Tiempo activos:* %muptime
-%botOfc
 
-*• Usuario registrados:* %toUserReg de %toUsers
 
 Unirte a nuestro canal de WhatsApp y informarte de todas la novedades/Actualizaciones del bot y mas
 %nna2
