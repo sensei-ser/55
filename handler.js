@@ -278,11 +278,11 @@ const isBotAdmin = metadata.participants.some(p => p.id.includes(botJid) && p.ad
 
 let message = "";
 if (subject) {
-message = `El nombre del grupo ha cambiado a *${groupName}*.`;
+message = `Название группы изменено на *${groupName}*.`;
 } else if (desc) {
-message = `La descripción del grupo *${groupName}* ha sido actualizada, nueva descripción:\n\n${metadata.desc || "Sin descripción"}`;
+message = `Описание группы *${groupName}* было обновлено, новое описание:\n\n${metadata.desc || "Без описания"}`;
 } else if (picture) {
-message = `La foto del grupo *${groupName}* ha sido actualizada.`;
+message = `Групповое фото *${groupName}* она была обновлена.`;
 }
 
 if (message && settings.detect) {
@@ -300,7 +300,7 @@ serverMessageId: 1
 }}
 });
 }} catch (err) {
-console.error(chalk.red("❌ Error en groupsUpdate:"), err);
+console.error(chalk.red("❌ Ошибка при групповом обновлении:"), err);
 }
 }
 
@@ -310,7 +310,7 @@ const callerId = call.from;
 const userTag = `@${callerId.split("@")[0]}`;
 const botConfig = await getSubbotConfig(conn.user?.id);
 if (!botConfig.anti_call) return;
-await conn.sendMessage(callerId, { text: `🚫 Está prohibido hacer llamadas, serás bloqueado...`,
+await conn.sendMessage(callerId, { text: `🚫 Звонить запрещено, вы будете заблокированы...`,
 contextInfo: {
 isForwarded: true,
 forwardingScore: 1,
@@ -340,13 +340,6 @@ const subbotConf = await getSubbotConfig(botId)
 info.wm = subbotConf.name ?? info.wm;
 info.img2 = subbotConf.logo_url ?? info.img2;
 
-try {
-await db.query(`INSERT INTO chats (id, is_group, timestamp, bot_id, joined)
-  VALUES ($1, $2, $3, $4, true)
-  ON CONFLICT (id) DO UPDATE SET timestamp = $3, bot_id = $4, joined = true`, [chatId, chatId.endsWith('@g.us'), Date.now(), (conn.user?.id || '').split(':')[0].replace('@s.whatsapp.net', '')]);
-} catch (err) {
-console.error(err);
-}
 
 const botConfig = await getSubbotConfig(botId)
 const isMainBot = conn === globalThis.conn;
