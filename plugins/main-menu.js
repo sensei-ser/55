@@ -6,12 +6,10 @@ import fs from "fs";
 const cooldowns = new Map()
 const COOLDOWN_DURATION = 180000
 
-const tags = {
-jadibot: '✨ SER SUB BOT',
-}
+
 
 const defaultMenu = {
-before: `
+before: `「 Хулиган」
 
 
 *• Fecha:* %fecha
