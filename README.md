@@ -133,7 +133,7 @@ apt update && apt upgrade -y && pkg install -y git nodejs ffmpeg imagemagick yar
 ```
 
 ```bash
-git clone https://github.com/sensei-ser/44 && cd 44
+git clone https://github.com/sensei-ser/55 && cd 55
 ```
 
 ```bash
